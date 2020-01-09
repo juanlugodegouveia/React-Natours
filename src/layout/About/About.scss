@@ -1,0 +1,9 @@
+.section-about {
+    background-color: $color-gray-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh; //95vh(header) - 75vh(polygon) = 20vh, to fixed the wide wedge background between the header and section-about. We use negative margin, because we need the margin moving up
+
+    @include respond(tab-port) {
+        padding: 22rem 0;
+    }
+}

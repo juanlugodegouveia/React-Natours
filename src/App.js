@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// Layout
+import Header from '../src/layout/Header/Header';
+import About from '../src/layout/About/About';
+import Features from '../src/layout/Features/Features';
+import Tours from '../src/layout/Tours/Tours';
+import Stories from '../src/layout/Stories/Stories';
+import Book from '../src/layout/Book/Book';
+import Footer from '../src/layout/Footer/Footer';
+
+// Components
+import Navigation from './components/Navigation/Navigation';
+import Popup from "./components/Popup/Popup";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navigation/>
+      <Header/>
+      <About/>
+      <Features/>
+      <Tours/>
+      <Stories/>
+      <Book/>
+      <Footer/>
+      <Popup/>
     </div>
   );
 }
